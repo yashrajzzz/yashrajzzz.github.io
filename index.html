@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>yashrajsinh.me</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="boot">
+  <div class="loader-wrap">
+    <div class="loader">
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="loaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4fd1ff"/>
+            <stop offset="55%" stop-color="#9d5cff"/>
+            <stop offset="100%" stop-color="#ff5ca8"/>
+          </linearGradient>
+        </defs>
+        <circle class="loader-ring" cx="30" cy="30" r="24"/>
+      </svg>
+    </div>
+    <div class="loader-label">Loading</div>
+  </div>
+</div>
+
+<canvas id="stars"></canvas>
+<canvas id="particles"></canvas>
+<div class="clouds" aria-hidden="true">
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="cloud cloud3"></div>
+  <div class="cloud cloud4"></div>
+</div>
+
+<nav>
+  <div class="logo">yashrajsinh<span>.</span>me</div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="navList">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#music">Now Playing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="eyebrow">Just an Engineering Student</div>
+  <h1 class="hero-name">Yashrajsinh Solanki</h1>
+  <p class="hero-tagline"><strong>Curiosity drives the ideas. Code brings them to life.</strong><br> I am currently an <strong>engineering student</strong> who lives somewhere between lecture halls, terminal windows, and a good playlist.</p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-fill">See my work →</a>
+    <a href="#music" class="btn btn-ghost">🎧 Hear what I'm playing</a>
+  </div>
+  <div class="hero-coffee" id="heroCoffee" title="hover me">
+    <div class="hero-coffee-cup">
+      <div class="steam-big"><span></span><span></span><span></span><span></span></div>
+      <svg width="48" height="48" viewBox="0 0 60 60">
+        <path d="M12 24h30v14a10 10 0 0 1-10 10H22a10 10 0 0 1-10-10V24z" fill="#1a1140" stroke="var(--accent-cyan)" stroke-width="1.5"/>
+        <path d="M42 27h4a5 5 0 0 1 0 10h-4" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5"/>
+        <rect x="10" y="20" width="34" height="5" rx="2.5" fill="#241a52" stroke="var(--accent-violet)" stroke-width="1.2"/>
+      </svg>
+    </div>
+    <span class="hero-coffee-label">still brewing</span>
+  </div>
+</section>
+
+<section id="about" class="reveal">
+  <div class="section-head">
+    <div class="eyebrow">About</div>
+    <h2>Turning coffee and curiosity into code.</h2>
+  </div>
+  <div class="about-body">
+    <p>I'm a <strong>third-year engineering student</strong> pursuing a <strong>B.Tech (Honours) in Information and Communication Technology (ICT)</strong> with <strong>Minor in Computational Science</strong> at <strong>Dhirubhai Ambani Institute of Information and Communication Technology (DA-IICT), Gandhinagar, India.</strong> who's happiest when a hard problem finally clicks — usually somewhere around 1AM, with headphones on and a half-finished cup of coffee going cold.</p>
+    <p>I want to learn everything but right now my focus is <strong>DSA</strong> and <strong>machine learning.</strong></p>
+
+    <p>Outside of programming, music keeps me company, and theatre reminds me that creativity and engineering go hand in hand.</p>
+
+    <div class="right-now">
+      <span class="right-now-dot"></span>
+      <p><strong>What am I doing right now?</strong> Probably in college, or sleeping, or listening to songs.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <div class="section-head">
+    <div class="eyebrow">Skill Set</div>
+    <h2>Tools I've used</h2>
+  </div>
+  <div class="skills-simple">
+    <div class="skills-line">
+      <span>Python</span><span>C</span><span>C++</span><span>SQL</span>
+    </div>
+    <div class="skills-line">
+      <span>HTML</span><span>CSS</span>
+    </div>
+    <div class="skills-line">
+      <span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>PyTorch</span>
+    </div>
+    <div class="skills-line">
+      <span>Git</span><span>GitHub</span><span>VS Code</span><span>Linux</span><span>pgAdmin</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <div class="section-head">
+    <div class="eyebrow">Selected Work</div>
+    <h2>Projects I've made</h2>
+  </div>
+  <div class="project-grid">
+
+    <div class="project-card" data-tilt>
+      <h3>CodeMentor</h3>
+      <p>An AI-powered coding companion that explains code, finds bugs, and helps developers write better software.</p>
+      <div class="stack"><span>Python</span><span>Gradio</span><span>LangChain</span><span>Groq API</span><span>DuckDuckGo Search</span><span>Render</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://github.com/yashrajzzz/CodeMentor" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.73.8 1.18 1.83 1.18 3.08 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a class="project-link" href="https://codementor-p73k.onrender.com/" target="_blank" rel="noopener">
+          Live Demo <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card" data-tilt>
+      <h3>Olympics DataHub</h3>
+      <p>A normalized PostgreSQL database that turns complex Olympic data into clean, efficient, and queryable information.</p>
+      <div class="stack"><span>PostgreSQL</span><span>SQL</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://github.com/ShubhPatel78/Olympic-Datahub" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.73.8 1.18 1.83 1.18 3.08 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="music" class="reveal">
+  <div class="section-head">
+    <div class="eyebrow">On Repeat</div>
+    <h2>What I'm listening to right now</h2>
+  </div>
+  <div class="player">
+    <div class="album-art" id="albumArt">
+      <img class="album-cover" id="albumCover" src="cover.jpeg" alt="Song cover art"
+           onerror="this.style.display='none'; document.getElementById('albumIcon').style.display='flex';">
+      <svg class="album-icon" id="albumIcon" viewBox="0 0 24 24" fill="none"><path d="M9 18V5l12-2v13" stroke="#070a14" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" stroke="#070a14" stroke-width="1.8"/><circle cx="18" cy="16" r="3" stroke="#070a14" stroke-width="1.8"/></svg>
+    </div>
+    <div class="track-info">
+      <div class="now"><span class="pulse" id="pulseDot"></span> <span id="nowLabel">Paused</span></div>
+      <h3 id="trackTitle">cloud in a bottle</h3>
+      <div class="artist" id="trackArtist">Nato Kitch</div>
+      <div class="bars" id="bars"></div>
+    </div>
+    <button class="play-btn" id="playBtn" aria-label="Play song">
+      <svg id="playIcon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+  </div>
+  <audio id="audio" src="song.mp3" preload="none"></audio>
+</section>
+
+<section id="quote" class="reveal">
+  <div class="quote-wrap">
+    <span class="quote-mark" aria-hidden="true">"</span>
+    <p class="quote-text">Be a Dreamer.</p>
+    <div class="quote-divider"></div>
+    <p class="quote-author">— Unknown</p>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <div class="eyebrow" style="justify-content:center;"> Get in touch</div>
+  <h2>Let's build something<br>worth listening to.</h2>
+  <p>Open to internships, collaborations, and good song recommendations.</p>
+  <div class="contact-links">
+    <a class="btn btn-fill" href="mailto:solankiyashrajsinhn@gmail.com">Email me →</a>
+    <a class="btn btn-ghost" href="https://github.com/yashrajzzz">GitHub</a>
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/yashrajsinh-solanki-772a12338/">LinkedIn</a>
+  </div>
+  <br>
+  <div class="contact-links">
+    <a class="btn btn-ghost" href="https://instagram.com/that_yashraj" target="_blank" rel="noopener">Instagram</a>
+    <a class="btn btn-ghost" href="https://substack.com/@jarsay" target="_blank" rel="noopener">Substack</a>
+  </div>
+</section>
+
+<footer>Built by Yashraj — designed &amp; coded from scratch, late at night, headphones on.</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
